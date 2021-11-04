@@ -2,10 +2,16 @@
 
 export class ContaCorrente {
     agencia;
-
+    static numeroDeContas = 0;
     //usar _ caso n seja compilado como privado ou caso pedirem.
     #cliente;
     #saldo;
+
+    constructor(agencia, cliente) {
+        this.#cliente = cliente;
+        this.agencia = agencia;
+        numeroDeContas++;
+    }
 
     sacar(valor) {
         if (this.#saldo < valor) {
