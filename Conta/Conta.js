@@ -1,4 +1,6 @@
 ﻿//classe abstrata
+import { Cliente } from "../Cliente.js"
+
 export class Conta {
     #saldoInicial;
     #cliente;
