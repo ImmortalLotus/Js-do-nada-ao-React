@@ -1,0 +1,21 @@
+{
+  "name": "jsateoreact",
+  "version": "1.0.0",
+  "description": "estudando js ate o react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImmortalLotus/Js-do-nada-ao-React.git"
+  },
+  "author": "ImmortalLotus",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ImmortalLotus/Js-do-nada-ao-React/issues"
+  },
+  "homepage": "https://github.com/ImmortalLotus/Js-do-nada-ao-React#readme"
+}
