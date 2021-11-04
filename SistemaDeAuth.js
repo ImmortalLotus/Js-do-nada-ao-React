@@ -1,5 +1,12 @@
 ﻿export class SistemaDeAuth {
     static login(autenticavel, senha) {
-        return autenticavel.autenticar(senha);
+        if (SistemaDeAuth.ehAutenticavel(autenticavel) && autenticavel.autenticar instanceof Function) {
+            return autenticavel.autenticar(senha);
+        }
+        return false;
+    }
+
+    static ehAutenticavel(autenticavel) {
+        return "autenticar" in autenticavel;
     }
 }

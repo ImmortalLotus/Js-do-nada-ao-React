@@ -27,3 +27,7 @@ function pegaNomeECPF({nome, cpf}){
 e na hora de chamar voce pode
 pegaNomeECPF(pessoa);
 sem medo
+
+
+ARROW FUNCTIONS ONDE OLHAR SE EU ESQUECER COMO QUE FAZ E PORQUE FAZER: 
+https://www.alura.com.br/artigos/conhecendo-arrow-functions
