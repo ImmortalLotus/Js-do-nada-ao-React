@@ -1,0 +1,29 @@
+﻿usar ... antes de um array/objeto abre o objeto
+exemplo: 
+num1=[1,1,2];
+num2= [3,3,...num1];
+vai printar
+3,3,1,1,2
+para criar valores padrao 
+var [nome = 'ju']= 'caio castro';
+se tiver vazio vai ir como ju
+e também
+let [num1,num2] = [1,2,3]
+no console log isso daqui só mostra
+1 2
+existe um jeito meio anormal de acessar os valores de um objeto: 
+let nome = pessoa.nome;
+te dá o nome q nem normalmente se faz
+mas
+voce também pode fazer 
+let { nome } = pessoa;
+que o js vai te fazer a boa e pegar o nome 
+também dá pra usar esse negocio estranho em uma função
+cenário: a pessoa tem cpf rg endereco e nome, voce por qualquer motivo só quer o nome e o cpf
+vc vai la e
+function pegaNomeECPF({nome, cpf}){
+//seu codigo
+}
+e na hora de chamar voce pode
+pegaNomeECPF(pessoa);
+sem medo
