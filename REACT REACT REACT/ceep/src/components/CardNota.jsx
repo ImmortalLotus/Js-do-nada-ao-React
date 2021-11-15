@@ -5,7 +5,7 @@ class CardNota extends Component{
         return (
             <section>
                 <header>
-                    <h3>Titulo</h3>
+                    <h3>Macarrao</h3>
                 </header>
                 <p>Escreva sua nota.</p>
             </section>
