@@ -2,24 +2,28 @@ import React, { Component } from "react";
 import "./estilo.css";
 class FormularioCadastro extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.titulo = "";
         this.texto = "";
     }
 
     _handleMudancaTitulo(evento) {
         this.titulo = evento.target.value;
+        evento.stopPropagation();
         console.log(this.titulo);
     }
 
     _handleMudancaTexto(evento) {
         this.texto = evento.target.value;
+        evento.stopPropagation();
         console.log(this.texto);
     }
     
     _criarNota(evento) {
-
+        evento.preventDefault();
+        evento.stopPropagation();
+        this.props.criarNota(this.titulo, this.texto);
     }
 
     render() {
